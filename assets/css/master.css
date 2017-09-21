@@ -2,11 +2,10 @@
 * Project: NAP 2017
 * Author: Marcelo Glacial
 * Starts on: 23/01/2017
-* Last modification: 09/02/2017
 */
 
 
-/* NOTE: General
+/*  General
 -------------------------------------------------- */
 body {
   position: relative;
@@ -32,7 +31,7 @@ ul {
   padding: 0;
 }
 
-/* NOTE: Header hero
+/*  Header hero
 -------------------------------------------------- */
 #Hero {
   background: url("../img/hero_bg.png") fixed bottom;
@@ -52,7 +51,7 @@ ul {
   display: none;
 }
 
-/* NOTE: Navbar
+/*  Navbar
 -------------------------------------------------- */
 .navbar {
   background: #FFF;
@@ -86,7 +85,7 @@ a.navbar-brand  {
   padding-top: 100px;
 }
 
-/* NOTE: Content
+/*  Content
 -------------------------------------------------- */
 .content {
   min-height: 100vh;
@@ -100,36 +99,42 @@ a.navbar-brand  {
   height: 5px;
   background: #00BDD6;
 }
+
+/*  Quem Somos
+-------------------------------------------------- */
 #Quem h2 {
   padding: 40px 0 20px 20px;
 }
 #Quem .line {
   display: none;
 }
+
+/*  Nossa Equipe
+-------------------------------------------------- */
+#Equipe {
+  text-align: center;
+}
 #Equipe .card {
-  clear: both;
-  min-height: 200px;
-  padding-bottom: 10px;
+  display: inline-grid;
+  min-height: 400px;
+  width: 350px;
+  padding: 30px;
 }
-#Equipe .card img {
-  float: left;
-  margin:0 20px 50px 0;
-  width: 120px;
-  height: 120px;
+#Equipe img {
+  margin: 0 auto;
 }
-#Equipe .text-right img {
-  float: right;
-  margin:0 0 50px 20px;
-}
-#Equipe p {
-  padding-bottom: 0;
-}
+
+/*  Nossos Serviços
+-------------------------------------------------- */
 #Servicos div {
   padding: 0 30px;
 }
 #Servicos ul {
   padding-bottom: 30px;
 }
+
+/*  Entre em Contato
+-------------------------------------------------- */
 #Contato a {
   display: inline-block;
   padding: 10px 0;
@@ -143,16 +148,16 @@ a.navbar-brand  {
   padding: 50px 0;
 }
 
-/* NOTE: Footer
+/*  Footer
 -------------------------------------------------- */
 #Foot {
   display: none;
 }
 
-/* NOTE: Responsive Mode
+/*  Responsive Mode
 -------------------------------------------------- */
 
-/* NOTE: Big screens ----------------*/
+/*  Big screens ----------------*/
 @media screen and (min-width: 1367px) {
   .navbar {
     margin: 0 auto;
@@ -167,7 +172,7 @@ a.navbar-brand  {
   }
 }
 
-/* NOTE: Phones and tablets  -------*/
+/*  Phones and tablets  -------*/
 @media screen and (min-width: 600px) and (max-width: 800px)  {
   #navbar a {
     font-size: 100%;

@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 100%;
 
-  font: 400 14px/1.8 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #4A4A4A;
 }
 img {
@@ -159,11 +159,12 @@ a.navbar-brand  {
   display: none;
 }
 
-/*  Responsive Mode
--------------------------------------------------- */
+/*
+Responsive Mode
+=======================================================
+*/
 
-/*  Big screens ----------------*/
-@media screen and (min-width: 1367px) {
+@media (min-width: 1200px) {
   .navbar {
     margin: 0 auto;
     padding: 20px 0;
@@ -176,29 +177,21 @@ a.navbar-brand  {
     min-height: 1100px;
   }
 }
-
-/*  Phones and tablets  -------*/
-@media screen and (min-width: 600px) and (max-width: 800px)  {
-  #navbar a {
-    font-size: 100%;
-  }
-  .navbar-fixed-top .nav {
-    padding-top: 10px;
-  }
-}
-@media screen and (max-width: 1024px)  {
+@media (max-width: 1204px) {
   a.navbar-brand  {
-    padding: 15px 50px 0 50px;
+    padding: 0 50px 0 50px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+
+  /* Hero */
   #Hero {
     background-position: right;
   }
   #Hero h1 {
     background-attachment: scroll;
     background-size: 70%;
-    background-position: 50% 30%;
+    background-position: 50% 40%;
     min-height: 100vh;
   }
   .arrow {
@@ -209,7 +202,7 @@ a.navbar-brand  {
     background: url("../img/arrow.png");
     background-size: cover;
     text-indent: -99999px;
-    bottom: 150px;
+    bottom: 120px;
     left: 44%;
     -webkit-animation: bounce 2s infinite ease-in-out;
   }
@@ -217,6 +210,10 @@ a.navbar-brand  {
     0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
     40%  { -webkit-transform: translateY(-20px); }
     80% { -webkit-transform: translateY(-10px); }
+  }
+  /* Navbar */
+  body.logged .navbar-fixed-top {
+    margin-top: 0;
   }
   .navbar {
     min-height: 70px;
@@ -240,21 +237,21 @@ a.navbar-brand  {
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
   }
-  .body-fix {
-    padding-top: 50px;
+
+  /* Content */
+  .content {
+    padding-top: 20px;
   }
-  .line {
-    margin-bottom: 40px;
+  #Quem {
+    text-align: justify;
   }
-  #Quem h2 {
-    padding: 10px 0 0 0;
+  #Equipe {
     text-align: center;
   }
-  #Quem .line,
-  #Contato .line {
-    display: block;
+  #Servicos {
+    text-align: center;
   }
-  #Equipe .card {
-    padding-bottom: 50px;
+  .card {
+    margin-bottom: 50px;
   }
 }

@@ -7,28 +7,10 @@
   <a href="#Quem" class="arrow">Scroll down</a>
 </div>
 
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Mobile / Sandwich Menu -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#Top"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo_small.png" alt="logo small"></a>
-    </div>
+<!-- NavBar -->
+<?php get_template_part( '/template-parts/navigation'); ?>
 
-    <?php wp_nav_menu( array(
-      'container_id'     => 'navbar',
-      'container_class'  => 'collapse navbar-collapse',
-      'menu_id'          => 'navbar',
-      'menu_class'       => 'nav nav-pills nav-justified',
-    ) ); ?>
-  </div>
-</nav>
-
+<!-- Content -->
 <section class="container">
   <div id="Quem" class="content">
     <h2>Quem Somos</h2>

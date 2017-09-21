@@ -17,7 +17,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#Top"><img src="<?php bloginfo('template_url'); ?>/img/logo_small.png" alt="logo small"></a>
+      <a class="navbar-brand" href="#Top"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo_small.png" alt="logo small"></a>
     </div>
 
     <?php wp_nav_menu( array(
@@ -40,7 +40,7 @@
       <p>Nosso objetivo é trabalhar os eixos da formação técnica, acadêmica e científica, através de atendimentos, grupos de estudo, cursos e supervisões clínicas nas grandes áreas da Avaliação Psicológica e da Psicologia.</p>
     </div>
     <div class="col-md-6">
-      <img src="<?php bloginfo('template_url'); ?>/img/bigbluecloud.png" alt="clouds" class="img-responsive">
+      <img src="<?php bloginfo('template_url'); ?>/assets/img/bigbluecloud.png" alt="clouds" class="img-responsive">
     </div>
   </div><!-- NOTE: /quem -->
 
@@ -49,19 +49,19 @@
     <span class="line"></span>
     <div class="col-md-6 text-right">
       <div class="card">
-        <img src="<?php bloginfo('template_url'); ?>/img/equipe_cristina.png" alt="Cristina" class="img-circle">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/equipe_cristina.png" alt="Cristina" class="img-circle">
         <h3>Ana Cristina Espíndola Rodrigues Montenegro</h3>
         <p>Psicóloga (CRP 11/10239)</p>
         <p>Pós-graduanda em Psicoterapia Psicanalítica, com formação em Clínica Psicanalítica com Adolescentes e Avaliação Psicológica.</p>
       </div>
       <div class="card">
-        <img src="<?php bloginfo('template_url'); ?>/img/equipe_catarina.png" alt="Catarina">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/equipe_catarina.png" alt="Catarina">
         <h3>Catarina Nívea Bezerra Menezes</h3>
         <p>Psicóloga (CRP 11/06161)</p>
         <p>Doutora e Mestre em Psicobiologia, com formação em Terapia Cognitiva Comportamental. Docente em cursos de graduação e pós-graduação com ênfase em avaliação psicológica e psicodiagnóstico. </p>
       </div>
       <div class="card">
-        <img src="<?php bloginfo('template_url'); ?>/img/equipe_cristiane.png" alt="Cristiane">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/equipe_cristiane.png" alt="Cristiane">
         <h3>Cristiane Maria Gondim Vasconcelos</h3>
         <p>Psicóloga (CRP 11/0439)</p>
         <p>Mestre em Psicologia, com formação em Psicanálise. Docente em cursos de graduação e pós graduação com ênfase em avaliação psicológica e psicodiagnóstico.</p>
@@ -69,19 +69,19 @@
     </div>
     <div class="col-md-6">
       <div class="card">
-        <img src="<?php bloginfo('template_url'); ?>/img/equipe_marcela.png" alt="Marcela">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/equipe_marcela.png" alt="Marcela">
         <h3>Marcela Helena de Freitas Clementino</h3>
         <p>Psicóloga (CRP 11/09404)</p>
         <p>Especialista em Transtornos Alimentares e Obesidade. Tutora COGMED. Formação em Análise do Comportamento e em Avaliação Psicológica. Pós-Graduanda em Terapia Cognitivo Comportamental.</p>
       </div>
       <div class="card">
-        <img src="<?php bloginfo('template_url'); ?>/img/equipe_scarlet.png" alt="Scarlett">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/equipe_scarlet.png" alt="Scarlett">
         <h3>Scarlett Borges Fernandes</h3>
         <p>Psicóloga (CRP 11/09551)</p>
         <p>Mestranda em Educação, Pós-graduanda em Psicoterapia Psicanalítica, Especialista em Neuropsicologia, com Formação em Psicoterapia Breve Focal e Avaliação Psicológica.</p>
       </div>
       <div class="card">
-        <img src="<?php bloginfo('template_url'); ?>/img/equipe_tatiana.png" alt="Tatiana">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/equipe_tatiana.png" alt="Tatiana">
         <h3>Tatiana Tostes Vieira da Costa</h3>
         <p>Psicóloga (CRP 11/02173)</p>
         <p>Doutora e Mestre em Psicologia Especialista em Psicopedagogia e em Docência no Ensino Superior, Formação em Avaliação psicológica e em Psicanálise. Tutora COGMED, Docente em cursos de graduação e pós-graduação com ênfase em avaliação psicológica e psicodiagnóstico.</p>
@@ -157,9 +157,9 @@
         Fortaleza - Ceará - Brasil<br>
         +55 85 3025 0353 <br>
         <a href="mailto:nucleodeavaliacaopsicologica@gmail.com">nucleodeavaliacaopsicologica@gmail.com</a><br>
-        <a href="https://www.facebook.com/Núcleo-de-Avaliação-Psicológica-NAP-1499518490327219/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.svg" alt="facebook icon"></a>
-        <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="instagram icon"></a>
-        <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/twitter.svg" alt="twitter icon"></a>
+        <a href="https://www.facebook.com/Núcleo-de-Avaliação-Psicológica-NAP-1499518490327219/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg" alt="facebook icon"></a>
+        <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg" alt="instagram icon"></a>
+        <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/twitter.svg" alt="twitter icon"></a>
       </div>
     </address>
 

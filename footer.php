@@ -4,9 +4,9 @@
   </footer>
 </div>
 
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/master.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/master.js"></script>
 
 <?php wp_footer(); ?>
 </body>

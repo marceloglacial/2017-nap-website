@@ -13,8 +13,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/master.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/master.css">
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>

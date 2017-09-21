@@ -35,6 +35,23 @@
   </div>
 </div><!-- NOTE: /quem -->
 
+<div id="Contato" class="content text-center">
+
+  <?php
+    $your_query = new WP_Query( 'pagename=contato' );
+    while ( $your_query->have_posts() ) : $your_query->the_post();
+  ?>
+
+  <h2><?php the_title(); ?></h2>
+  <span class="line"></span>
+  <?php the_content(); ?>
+  <?php
+    endwhile;
+    wp_reset_postdata();
+  ?>
+</div><!-- NOTE: /contato -->
+
+
 </section> <!--Container -->
 
 <?php get_footer(); ?>

@@ -9,6 +9,7 @@
 
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
+    <!-- Mobile / Sandwich Menu -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -19,16 +20,13 @@
       <a class="navbar-brand" href="#Top"><img src="<?php bloginfo('template_url'); ?>/img/logo_small.png" alt="logo small"></a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav nav-pills nav-justified">
-        <li><a href="#Quem">Quem Somos</a></li>
-        <li><a href="#Equipe">Equipe</a></li>
-        <li><a href="#Servicos">Serviços</a></li>
-        <li><a href="#Contato">Contato</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    <?php wp_nav_menu( array(
+      'container_id'     => 'navbar',
+      'container_class'  => 'collapse navbar-collapse',
+      'menu_id'          => 'navbar',
+      'menu_class'       => 'nav nav-pills nav-justified',
+    ) ); ?>
+  </div>
 </nav>
 
 <section class="container">

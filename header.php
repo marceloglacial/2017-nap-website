@@ -30,4 +30,4 @@
   ga('send', 'pageview');
   </script>
 </head>
-<body id="Top" data-spy="scroll" data-target="#navbar">
+<body id="Top" data-spy="scroll" data-target="#navbar" class="<?php if (is_user_logged_in()) { echo "logged"; } ?>">

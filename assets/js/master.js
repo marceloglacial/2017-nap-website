@@ -5,15 +5,20 @@ $('body').scrollspy({ target: '#navbar' })
 
 // change navbar layout on scrolling
 $(document).ready(function(){
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 600) {
-      $("section").addClass("body-fix");
-      $("nav").addClass("navbar-fixed-top");
-    } else {
-      $("section").removeClass("body-fix");
-      $("nav").removeClass("navbar-fixed-top");
-    }
-  });
+
+  if($(window).width() > 768) {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 600) {
+        $("section").addClass("body-fix");
+        $("nav").addClass("navbar-fixed-top");
+      } else {
+        $("section").removeClass("body-fix");
+        $("nav").removeClass("navbar-fixed-top");
+      }
+    });
+  } else {
+    $("nav").addClass("navbar-fixed-top");
+  };
 });
 
 // close menu afer click (on mobile)
@@ -21,7 +26,7 @@ $('.nav a').on('click', function(){
   if($(window).width() < 767)
   {
     $('.navbar-toggle').click()
-  }
+  };
 });
 
 // vendor.js > http://www.w3schools.com/bootstrap/bootstrap_theme_band.asp

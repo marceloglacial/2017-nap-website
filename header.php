@@ -31,3 +31,4 @@
   </script>
 </head>
 <body id="Top" data-spy="scroll" data-target="#navbar" class="<?php if (is_user_logged_in()) { echo "logged"; } ?>">
+  <div id="Main">

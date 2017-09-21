@@ -160,98 +160,22 @@ a.navbar-brand  {
 }
 
 /*
-Responsive Mode
+Responsive Mode (320, 768, 1024, 1200)
 =======================================================
 */
-
-@media (min-width: 1200px) {
-  .navbar {
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 1366px;
-  }
-  .content {
-    min-height: auto;
-  }
-  #Contato {
-    min-height: 1100px;
-  }
+* {
+  outline: solid 1px #FF0000;
 }
-@media (max-width: 1204px) {
-  a.navbar-brand  {
-    padding: 0 50px 0 50px;
+@media (max-width: 1200px) {
+  a.navbar-brand {
+    padding-right: 50px;
+  }
+  #navbar a {
+    font-size: 110%;
   }
 }
 @media (max-width: 768px) {
-
-  /* Hero */
-  #Hero {
-    background-position: right;
-  }
-  #Hero h1 {
-    background-attachment: scroll;
-    background-size: 70%;
-    background-position: 50% 40%;
-    min-height: 100vh;
-  }
-  .arrow {
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url("../img/arrow.png");
-    background-size: cover;
-    text-indent: -99999px;
-    bottom: 120px;
-    left: 44%;
-    -webkit-animation: bounce 2s infinite ease-in-out;
-  }
-  @-webkit-keyframes bounce {
-    0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
-    40%  { -webkit-transform: translateY(-20px); }
-    80% { -webkit-transform: translateY(-10px); }
-  }
-  /* Navbar */
-  body.logged .navbar-fixed-top {
-    margin-top: 0;
-  }
-  .navbar {
-    min-height: 70px;
-    border-bottom: solid 1px #F0F0F0;
-  }
-  .navbar-brand {
-    display: block;
-  }
-  a.navbar-brand  {
-    height: 35px;
-    margin-top: 20px;
-    padding: 0 25px;
-  }
-  .navbar-default .navbar-toggle {
-    border: none;
-    margin: 15px 15px 0 0;
-  }
-  .navbar-default .navbar-toggle:hover {
-    background: none;
-  }
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: none;
-  }
-
-  /* Content */
-  .content {
-    padding-top: 20px;
-  }
-  #Quem {
-    text-align: justify;
-  }
-  #Equipe {
-    text-align: center;
-  }
-  #Servicos {
-    text-align: center;
-  }
-  .card {
-    margin-bottom: 50px;
+  header {
+    display: none;
   }
 }

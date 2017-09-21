@@ -9,5 +9,6 @@
 <script src="<?php bloginfo('template_url'); ?>/assets/js/master.js"></script>
 
 <?php wp_footer(); ?>
+</div> <!-- /Main -->
 </body>
 </html>

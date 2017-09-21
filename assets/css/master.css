@@ -65,10 +65,12 @@ ul {
   font-size: 140%;
   margin-top: 20px;
   border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 #navbar .active a,
 #navbar a:hover {
-  background: #F9F9F9;
+  background: #F5F5F5;
 }
 .navbar-brand  {
   display: none;

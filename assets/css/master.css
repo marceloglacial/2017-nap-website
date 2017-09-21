@@ -122,17 +122,12 @@ a.navbar-brand  {
   line-height: 130%;
   margin-bottom: 0;
 }
-#Equipe h3, #Equipe p {
 
 /*  Nossos Serviços
 -------------------------------------------------- */
-#Servicos div {
-  padding: 0 30px;
+#Servicos .line {
+  margin-bottom: 30px;
 }
-#Servicos ul {
-  padding-bottom: 30px;
-}
-
 /*  Entre em Contato
 -------------------------------------------------- */
 #Contato a {

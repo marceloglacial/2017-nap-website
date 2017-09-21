@@ -33,13 +33,11 @@
 </div><!-- /Quem -->
 
 <div id="Equipe" class="content">
-
-
   <?php
   $args = array(
     'post_parent' => 7,
     'post_type' => 'page',
-    'orderby' => 'menu_order'
+    'order' => 'ASC'
   );
 
   $child_query = new WP_Query( $args );
@@ -65,19 +63,36 @@
   ?>
 </div><!-- /Equipe -->
 
+
 <div id="Servicos" class="content">
   <?php
-  $your_query = new WP_Query( 'pagename=nossos-servicos' );
-  while ( $your_query->have_posts() ) : $your_query->the_post();
+  $args = array(
+    'post_parent' => 9,
+    'post_type' => 'page',
+    'order' => 'ASC'
+  );
+
+  $child_query = new WP_Query( $args );
   ?>
-  <h2 class="text-center"><?php the_title(); ?></h2>
+  <h2 class="text-center">Nossos Serviços</h2> <!-- Fix this -->
   <span class="line"></span>
-  <?php the_content(); ?>
+
+  <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
+
+    <div class="card col-md-4">
+      <?php
+      if ( has_post_thumbnail() ) {
+        the_post_thumbnail('page-thumb');
+      }
+      ?>
+      <h3><?php the_title(); ?></h3>
+      <?php the_content(); ?>
+    </div>
+  <?php endwhile; ?>
+
   <?php
-endwhile;
-wp_reset_postdata();
-?>
-</div><!-- /Servicos -->
+  wp_reset_postdata();
+  ?></div><!-- /Servicos -->
 
 <div id="Contato" class="content text-center">
   <?php

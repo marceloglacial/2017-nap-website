@@ -46,7 +46,7 @@ $('.nav a').on('click', function(){
       }, 900, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        // window.location.hash = hash;
+        window.location.hash = hash;
       });
     } // End if
   });

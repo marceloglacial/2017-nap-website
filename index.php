@@ -49,7 +49,7 @@
 
   <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
 
-    <div class="card">
+    <div class="card col-md-4">
       <?php
       if ( has_post_thumbnail() ) {
         the_post_thumbnail('page-thumb');

@@ -16,12 +16,12 @@ img {
 }
 body {
   position: relative;
-  font: 400 14px/1.8 Lato, sans-serif;
+  font: 400 14px/1.8 'Lato', sans-serif;
   color: #4A4A4A;
 }
 h3 {
   color: #00BDD6;
-  font-size: 120%;
+  font-size: 130%;
 }
 p {
   padding-bottom: 15px;
@@ -111,18 +111,18 @@ a.navbar-brand  {
 
 /*  Nossa Equipe
 -------------------------------------------------- */
-#Equipe {
-  text-align: center;
-}
 #Equipe .card {
-  display: inline-grid;
-  min-height: 400px;
-  width: 350px;
   padding: 30px;
 }
 #Equipe img {
-  margin: 0 auto;
+  width: 100px;
+  height: 100px;
 }
+#Equipe h3 {
+  line-height: 130%;
+  margin-bottom: 0;
+}
+#Equipe h3, #Equipe p {
 
 /*  Nossos Serviços
 -------------------------------------------------- */
@@ -250,15 +250,6 @@ a.navbar-brand  {
     display: block;
   }
   #Equipe .card {
-    text-align: center;
     padding-bottom: 50px;
-  }
-  #Equipe .card img {
-    float: none;
-    padding: 0;
-    margin: 0 0 10px 0;
-  }
-  #Servicos div * {
-    text-align: left;
   }
 }

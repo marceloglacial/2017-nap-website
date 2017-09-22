@@ -22,10 +22,9 @@ img {
 }
 h3 {
   color: #00BDD6;
-  font-size: 130%;
 }
 p {
-  padding-bottom: 15px;
+  line-height: 1.8em;
 }
 ul {
   list-style: none;
@@ -98,6 +97,10 @@ a.navbar-brand  {
   height: 5px;
   background: #00BDD6;
 }
+#Quem, #Equipe, #Servicos, #Contato {
+  padding-top: 120px;
+}
+
 
 /*  Quem Somos
 -------------------------------------------------- */
@@ -180,6 +183,16 @@ Responsive Mode (320, 768, 1024, 1200)
     font-size: 1.7em;
     line-height: 2em;
   }
+  body.logged #wpadminbar {
+    position: fixed;
+  }
+  body.logged .navbar-fixed-top {
+    margin-top: 46px;
+  }
+  body.logged #Quem, body.logged #Equipe, body.logged #Servicos, body.logged #Contato {
+    padding-top: 166px;
+  }
+
   #Hero h1 {
     display: none;
   }
@@ -246,6 +259,9 @@ Responsive Mode (320, 768, 1024, 1200)
 @media (max-width: 320px) {
   body {
     font-size: 1.5em;
+  }
+  body.logged #Quem, body.logged #Equipe, body.logged #Servicos, body.logged #Contato {
+    padding-top: 136px;
   }
   #Quem, #Equipe, #Servicos, #Contato {
     padding-top: 90px;

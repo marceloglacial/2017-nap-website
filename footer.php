@@ -1,6 +1,6 @@
 <div id="Foot" class="container-fluid">
   <footer>
-    Copyright (c) 2017 Copyright <a href="http://marceloglacial.com/" title="design and front-end developening">Marcelo Glacial</a>. All Rights Reserved.
+    <a href="http://marceloglacial.com/" title="design and front-end developening">Desenvolvido por: Marcelo Glacial</a>
   </footer>
 </div>
 

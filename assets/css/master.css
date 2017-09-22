@@ -207,16 +207,15 @@ Responsive Mode (320, 768, 1024, 1200)
     padding: 25px 15px;
     margin: 0;
   }
-  .content {
-    padding-top: 30px;
-  }
   #Main {
     text-align: center;
+  }
+  #Quem, #Equipe, #Servicos, #Contato {
+    padding: 120px 30px 50px 30px;
   }
   #Quem {
     color: #FFF;
     text-align: justify;
-    padding: 120px 30px 50px 30px;
     background: url("../img/hero_bg.png") top no-repeat;
     background-size: cover;
   }
@@ -229,7 +228,6 @@ Responsive Mode (320, 768, 1024, 1200)
     background-size: cover;
     color: #FFF;
     text-align: left;
-    padding: 50px 20px;
   }
   #Servicos h3 {
     color: #00171f;
@@ -249,8 +247,8 @@ Responsive Mode (320, 768, 1024, 1200)
   body {
     font-size: 1.5em;
   }
-  #Quem {
-    padding: 90px 20px 50px 20px;
+  #Quem, #Equipe, #Servicos, #Contato {
+    padding-top: 90px;
   }
   .navbar {
     min-height: 50px;

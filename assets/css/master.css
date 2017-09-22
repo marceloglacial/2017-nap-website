@@ -42,7 +42,7 @@ body.logged .navbar-fixed-top {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
 }
 #Hero h1 {
   text-indent: -99999px;
@@ -114,7 +114,7 @@ a.navbar-brand  {
 -------------------------------------------------- */
 #Equipe {
   background: url("../img/equipe_bg.png") no-repeat fixed center;
-  background-size: 80%;
+  background-size: 40%;
 }
 #Equipe .card {
   padding: 40px;
@@ -234,6 +234,9 @@ Responsive Mode (320, 768, 1024, 1200)
   #Quem h2 {
     text-align: center;
     padding: 0 0 20px 0;
+  }
+  #Equipe {
+    background-size: 80%;
   }
   #Servicos {
     background: url("../img/hero_bg.png") no-repeat top right;

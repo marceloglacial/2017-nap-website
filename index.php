@@ -103,7 +103,7 @@
   $your_query = new WP_Query( 'pagename=contato' );
   while ( $your_query->have_posts() ) : $your_query->the_post();
   ?>
-  <h2><?php the_title(); ?></h2>
+  <h2 class="text-center"><?php the_title(); ?></h2>
   <span class="line"></span>
   <?php the_content(); ?>
   <?php

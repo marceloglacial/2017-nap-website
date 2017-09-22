@@ -15,7 +15,7 @@
       'container_id'     => 'navbar',
       'container_class'  => 'collapse navbar-collapse',
       'menu_id'          => 'navbar',
-      'menu_class'       => 'nav nav-pills nav-justified',
+      'menu_class'       => 'nav nav-justified nav-pills',
     ) ); ?>
   </div>
 </nav>

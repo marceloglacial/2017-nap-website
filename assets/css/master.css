@@ -41,18 +41,17 @@ body.logged .navbar-fixed-top {
   background: url("../img/hero_bg.png") fixed bottom;
   background-size: cover;
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 #Hero h1 {
-  display:block;
-  margin: 0;
-  padding: 0;
   text-indent: -99999px;
-  width: 100%;
-  height: 86vh;
-  background: url("../img/logo_white.png") no-repeat fixed center;
-}
-.arrow {
-  display: none;
+  background: url("../img/logo_white.png") no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+
+  margin: 150px auto 0 auto;
 }
 
 /*  Navbar
@@ -193,7 +192,7 @@ Responsive Mode (320, 768, 1024, 1200)
     padding-top: 166px;
   }
 
-  #Hero h1 {
+  #Hero {
     display: none;
   }
   .navbar {

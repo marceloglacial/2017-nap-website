@@ -5,11 +5,10 @@
 ?>
 <?php get_header(); ?>
 
-<div id="Hero">
+<div id="Hero" class="container-fluid">
   <header>
     <h1><?php bloginfo('name'); ?></h1>
   </header>
-  <a href="#Quem" class="arrow">Scroll down</a>
 </div>
 
 <!-- NavBar -->

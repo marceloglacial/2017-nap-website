@@ -9,10 +9,8 @@ $(document).ready(function(){
   if($(window).width() > 768) {
     $(window).scroll(function() {
       if ($(document).scrollTop() > 600) {
-        $("section").addClass("body-fix");
         $("nav").addClass("navbar-fixed-top");
       } else {
-        $("section").removeClass("body-fix");
         $("nav").removeClass("navbar-fixed-top");
       }
     });

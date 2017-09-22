@@ -14,14 +14,11 @@ body {
   height: 100%;
 
   font-family: 'Lato', sans-serif;
-  color: #4A4A4A;
+  color: #808285;
 }
 img {
   max-width: 100%;
   max-height: 100%;
-}
-h2 {
-  padding-top: 50px;
 }
 h3 {
   color: #00BDD6;
@@ -69,7 +66,7 @@ body.logged .navbar-fixed-top {
   min-height: 100px;
 }
 #navbar a {
-  color: #000;
+  color: #00171f;
   font-size: 140%;
   margin-top: 20px;
   border-radius: 0;
@@ -91,20 +88,12 @@ a.navbar-brand  {
   margin-top: 20px;
   padding: 0 250px 0 50px;
 }
-.body-fix {
-  padding-top: 100px;
-}
 
 /*  Content
 -------------------------------------------------- */
-.content {
-  min-height: 100vh;
-  padding-top: 100px;
-  clear: both;
-}
 .line {
   display: block;
-  margin: 15px auto 10px auto;
+  margin: 5px auto;
   width: 100px;
   height: 5px;
   background: #00BDD6;
@@ -121,8 +110,12 @@ a.navbar-brand  {
 
 /*  Nossa Equipe
 -------------------------------------------------- */
+#Equipe {
+  background: url("../img/equipe_bg.png") no-repeat fixed center;
+  background-size: 80%;
+}
 #Equipe .card {
-  padding: 30px;
+  padding: 40px;
 }
 #Equipe img {
   width: 100px;
@@ -133,13 +126,12 @@ a.navbar-brand  {
   margin-bottom: 0;
 }
 
-/*  Nossos Serviços
--------------------------------------------------- */
-#Servicos .line {
-  margin-bottom: 30px;
-}
 /*  Entre em Contato
 -------------------------------------------------- */
+#Contato {
+  background: url("../img/contato_bg.png") no-repeat bottom center;
+  background-size: 80%;
+}
 #Contato a {
   display: inline-block;
   padding: 10px 0;
@@ -156,16 +148,20 @@ a.navbar-brand  {
 /*  Footer
 -------------------------------------------------- */
 #Foot {
-  display: none;
+  padding: 20px;
+  color: #FFF;
+  background: #00BDD6;
 }
+#Foot a {
+  color: #FFF;
+}
+
+
 
 /*
 Responsive Mode (320, 768, 1024, 1200)
 =======================================================
 */
-* {
-  outline: solid 1px #FF0000;
-}
 @media (max-width: 1200px) {
   a.navbar-brand {
     padding-right: 50px;
@@ -175,7 +171,65 @@ Responsive Mode (320, 768, 1024, 1200)
   }
 }
 @media (max-width: 768px) {
-  header {
+  body {
+    font-size: 1.7em;
+    line-height: 2em;
+  }
+  #Hero h1 {
     display: none;
+  }
+  a.navbar-brand {
+    height: 70px;
+    padding: 25px 15px;
+    margin: 0;
+  }
+  .content {
+    padding-top: 30px;
+  }
+  #Main {
+    text-align: center;
+  }
+  #Quem {
+    color: #FFF;
+    text-align: justify;
+    padding: 90px 30px 50px 30px;
+    background: url("../img/hero_bg.png") top no-repeat;
+    background-size: cover;
+  }
+  #Quem h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+  #Servicos {
+    background: url("../img/hero_bg.png") no-repeat top right;
+    background-size: cover;
+    color: #FFF;
+    text-align: left;
+    padding: 50px 20px;
+  }
+  #Servicos h3 {
+    color: #00171f;
+    font-weight: bold;
+  }
+  #Servicos .line {
+    background: #FFF;
+    margin-bottom: 70px;
+  }
+  #Servicos .card {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 1.5em;
+  }
+#Quem {
+  padding: 90px 20px 50px 20px;
+}
+  .navbar {
+    min-height: 50px;
+  }
+  a.navbar-brand {
+    padding: 15px;
   }
 }

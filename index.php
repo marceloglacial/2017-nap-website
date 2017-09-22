@@ -18,7 +18,7 @@
 <!-- Content -->
 <section class="container">
 
-  <div id="Quem" class="content">
+  <div id="Quem" class="content row">
     <?php
     $your_query = new WP_Query( 'pagename=quem-somos' );
     while ( $your_query->have_posts() ) : $your_query->the_post();
@@ -37,7 +37,7 @@
   </div>
 </div><!-- /Quem -->
 
-<div id="Equipe" class="content">
+<div id="Equipe" class="content row">
   <?php
   $args = array(
     'post_parent' => 7,
@@ -69,7 +69,7 @@
 </div><!-- /Equipe -->
 
 
-<div id="Servicos" class="content">
+<div id="Servicos" class="content row">
   <?php
   $args = array(
     'post_parent' => 9,
@@ -99,7 +99,7 @@
   wp_reset_postdata();
   ?></div><!-- /Servicos -->
 
-<div id="Contato" class="content text-center">
+<div id="Contato" class="content text-center row">
   <?php
   $your_query = new WP_Query( 'pagename=contato' );
   while ( $your_query->have_posts() ) : $your_query->the_post();

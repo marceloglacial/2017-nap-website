@@ -199,6 +199,8 @@ Responsive Mode (320, 768, 1024, 1200)
   }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
+    max-height: 100%;
+    padding-bottom: 20px;
   }
   a.navbar-brand {
     height: 70px;

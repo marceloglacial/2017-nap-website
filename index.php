@@ -99,7 +99,7 @@
   wp_reset_postdata();
   ?></div><!-- /Servicos -->
 
-<div id="Contato" class="content text-center row">
+<div id="Contato" class="contain row">
   <?php
   $your_query = new WP_Query( 'pagename=contato' );
   while ( $your_query->have_posts() ) : $your_query->the_post();

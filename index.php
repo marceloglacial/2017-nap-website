@@ -9,6 +9,7 @@
   <header>
     <h1><?php bloginfo('name'); ?></h1>
   </header>
+  <a href="#Quem" class="arrow">Scroll down</a>
 </div>
 
 <!-- NavBar -->
@@ -71,7 +72,7 @@
 <div id="Servicos" class="content row">
   <?php
   $args = array(
-    'post_parent' => 9,
+    'post_parent' => 34,
     'post_type' => 'page',
     'order' => 'ASC'
   );

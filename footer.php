@@ -1,6 +1,6 @@
 <div id="Foot" class="container-fluid">
   <footer>
-    <a href="http://marceloglacial.com/" title="design and front-end developening">Desenvolvido por: Marcelo Glacial</a>
+    <a href="http://marceloglacial.com/" title="design and front-end developening">Site desenvolvido por <strong>Marcelo Glacial</strong></a>
   </footer>
 </div>
 

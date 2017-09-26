@@ -199,10 +199,15 @@ nav a {
   padding: 20px;
   color: #FFF;
   background: #00BDD6;
+  text-align: center;
 }
 
 #Foot a {
   color: #FFF;
+}
+#Foot strong {
+  font-weight: normal;
+  text-decoration: underline;
 }
 
 /*

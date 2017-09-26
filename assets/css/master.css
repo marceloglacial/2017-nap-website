@@ -54,7 +54,10 @@ body.logged .navbar-fixed-top {
   background-size: contain;
   width: 400px;
   height: 400px;
-  margin: 200px auto 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .arrow {
@@ -302,6 +305,9 @@ Responsive Mode (320, 768, 1024, 1200)
   }
   #Quem, #Equipe, #Servicos, #Contato {
     padding-top: 90px;
+  }
+  nav {
+    display: block;
   }
   .navbar {
     min-height: 50px;

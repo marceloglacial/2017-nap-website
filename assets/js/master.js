@@ -50,5 +50,7 @@ $(document).ready(function(){
         $("nav").addClass("hidden");
       };
     });
+  } else {
+    $("nav").removeClass("hidden");
   };
 });

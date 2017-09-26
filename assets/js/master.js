@@ -31,3 +31,23 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+// display menu after scrolling
+$(document).ready(function(){
+  if($(window).width() > 767)
+  {
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+
+      if(height  > 600) {
+        // do something
+        $("nav").addClass("navbar-fixed-top");
+        $("nav").removeClass("hidden");
+      } else {
+        $("nav").removeClass("navbar-fixed-top");
+        $("nav").addClass("hidden");
+      };
+    });
+  };
+});

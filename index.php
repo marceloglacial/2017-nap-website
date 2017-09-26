@@ -39,7 +39,7 @@
 <div id="Equipe" class="content row">
   <?php
   $args = array(
-    'post_parent' => 7,
+    'post_parent' => 11,
     'post_type' => 'page',
     'order' => 'ASC'
   );

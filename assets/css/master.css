@@ -207,13 +207,10 @@ nav a {
 Responsive Mode (320, 768, 1024, 1200)
 =======================================================
 */
-
-@media (max-width: 1200px) {
-  .navbar-brand {
-    padding-right: 50px;
-  }
-  #navbar a {
-    font-size: 110%;
+@media (min-width: 1400px) {
+  .navbar div {
+    max-width: 1366px;
+    margin: 0 auto;
   }
 }
 

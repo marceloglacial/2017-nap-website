@@ -35,13 +35,14 @@ $(document).ready(function(){
 
 // display menu after scrolling
 $(document).ready(function(){
-  if($(window).width() > 767)
+  if($(window).width() > 767) // only for desktop resolution
   {
     $(window).scroll(function() {
       var height = $(window).scrollTop();
 
       if(height  > 600) {
         // do something
+        $("nav").fadeIn();
         $("nav").addClass("navbar-fixed-top");
         $("nav").removeClass("hidden");
       } else {

@@ -4,28 +4,30 @@
 * Starts on: 23/01/2017
 */
 
-
 /*  General
 -------------------------------------------------- */
+
 body {
   position: relative;
-
   width: 100%;
   height: 100%;
-
   font-family: 'Lato', sans-serif;
   color: #808285;
 }
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
+
 h3 {
   color: #00BDD6;
 }
+
 p {
   line-height: 1.8em;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -37,6 +39,7 @@ body.logged .navbar-fixed-top {
 
 /*  Header hero
 -------------------------------------------------- */
+
 #Hero {
   background: url("../img/hero_bg.png") fixed bottom;
   background-size: cover;
@@ -44,15 +47,16 @@ body.logged .navbar-fixed-top {
   width: 100%;
   height: 100vh;
 }
+
 #Hero h1 {
   text-indent: -99999px;
   background: url("../img/logo_white.png") no-repeat;
   background-size: contain;
   width: 400px;
   height: 400px;
-
   margin: 200px auto 0 auto;
 }
+
 .arrow {
   display: block;
   position: absolute;
@@ -65,20 +69,53 @@ body.logged .navbar-fixed-top {
   left: 48%;
   -webkit-animation: bounce 2s infinite ease-in-out;
 }
+
 @-webkit-keyframes bounce {
-  0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
-  40%  { -webkit-transform: translateY(-20px); }
-  80% { -webkit-transform: translateY(-10px); }
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
 }
 
 .clear {
   clear: both !important;
 }
+
 /*  Navbar
 -------------------------------------------------- */
 
+nav a {
+  color: #000;
+  text-transform: lowercase;
+}
+.navbar  {
+  background: #FFF;
+}
+.navbar-brand {
+  height: 80px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+.nav-pills {
+  margin-top: 20px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background: #FFF;
+  color: #000;
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav-pills>li.active>a:hovervvbvbvbbbvbb {
+  background: #00BDD6;
+  color: #FFF;
+}
+
 /*  Content
 -------------------------------------------------- */
+
 .line {
   display: block;
   margin: 5px auto;
@@ -87,29 +124,34 @@ body.logged .navbar-fixed-top {
   background: #00BDD6;
 }
 
-
 /*  Quem Somos
 -------------------------------------------------- */
+
 #Quem h2 {
   padding: 40px 0 20px 20px;
 }
+
 #Quem .line {
   display: none;
 }
 
 /*  Nossa Equipe
 -------------------------------------------------- */
+
 #Equipe {
   background: url("../img/equipe_bg.png") no-repeat fixed center;
   background-size: 40%;
 }
+
 #Equipe .card {
   padding: 40px;
 }
+
 #Equipe img {
   width: 100px;
   height: 100px;
 }
+
 #Equipe h3 {
   line-height: 130%;
   margin-bottom: 0;
@@ -117,19 +159,23 @@ body.logged .navbar-fixed-top {
 
 /*  Entre em Contato
 -------------------------------------------------- */
+
 #Contato {
   background: url("../img/contato_bg.png") no-repeat bottom center;
   background-size: 80%;
   padding: 20px;
   padding-top: 100px;
 }
+
 #Contato a {
   display: inline-block;
   padding: 10px 0;
 }
+
 #Contato address {
   padding-top: 30px;
 }
+
 #Contato iframe {
   min-width: 100%;
   min-height: 600px;
@@ -143,32 +189,30 @@ body.logged .navbar-fixed-top {
 
 /*  Footer
 -------------------------------------------------- */
+
 #Foot {
   padding: 20px;
   color: #FFF;
   background: #00BDD6;
 }
+
 #Foot a {
   color: #FFF;
 }
-
-
 
 /*
 Responsive Mode (320, 768, 1024, 1200)
 =======================================================
 */
 
-
 @media (max-width: 1200px) {
-  a.navbar-brand {
+  .navbar-brand {
     padding-right: 50px;
   }
   #navbar a {
     font-size: 110%;
   }
 }
-
 
 @media (max-width: 768px) {
   body {
@@ -184,7 +228,6 @@ Responsive Mode (320, 768, 1024, 1200)
   body.logged #Quem, body.logged #Equipe, body.logged #Servicos, body.logged #Contato {
     padding-top: 166px;
   }
-
   #Hero {
     display: none;
   }
@@ -193,7 +236,7 @@ Responsive Mode (320, 768, 1024, 1200)
   }
   .navbar-default .navbar-toggle {
     border: none;
-    margin: 30px 15px 0 0;
+    margin: 15px 15px 0 0;
   }
   .navbar-toggle .icon-bar {
     width: 35px;
@@ -207,10 +250,10 @@ Responsive Mode (320, 768, 1024, 1200)
     max-height: 100%;
     padding-bottom: 20px;
   }
-  a.navbar-brand {
+  .navbar-brand {
     height: 70px;
-    padding: 25px 15px;
-    margin: 0;
+    padding-left: 30px;
+    padding-right: 0px;
   }
   #Main {
     text-align: center;
@@ -250,7 +293,6 @@ Responsive Mode (320, 768, 1024, 1200)
   }
 }
 
-
 @media (max-width: 320px) {
   body {
     font-size: 1.5em;
@@ -264,7 +306,7 @@ Responsive Mode (320, 768, 1024, 1200)
   .navbar {
     min-height: 50px;
   }
-  a.navbar-brand {
+  .navbar-brand {
     padding: 15px;
   }
   .navbar-default .navbar-toggle {

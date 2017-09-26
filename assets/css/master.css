@@ -150,6 +150,7 @@ nav a {
 #Equipe {
   background: url("../img/equipe_bg.png") no-repeat fixed center;
   background-size: 40%;
+  text-align: center;
 }
 
 #Equipe .card {
@@ -312,12 +313,6 @@ Responsive Mode (320, 768, 1024, 1200)
   body.logged #Quem, body.logged #Equipe, body.logged #Servicos, body.logged #Contato {
     padding-top: 136px;
   }
-  #Quem, #Equipe, #Servicos, #Contato {
-    padding-top: 90px;
-  }
-  #Quem h2 {
-    color: #FFF;
-  }
   nav {
     display: block;
   }
@@ -333,5 +328,16 @@ Responsive Mode (320, 768, 1024, 1200)
   .navbar-toggle .icon-bar {
     width: 25px;
     margin-bottom: 2px;
+  }
+  #Quem, #Equipe, #Servicos, #Contato {
+    padding-top: 90px;
+  }
+  #Quem h2,
+  #Servicos h2 {
+    color: #FFF;
+  }
+  #Servicos h3 {
+    color: #FFF;
+    letter-spacing: -1px;
   }
 }

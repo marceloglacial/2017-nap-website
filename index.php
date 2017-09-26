@@ -48,7 +48,7 @@
 
   $child_query = new WP_Query( $args );
   ?>
-  <h2 class="text-center">Nossa Equipe</h2> <!-- Fix this -->
+  <h2>Nossa Equipe</h2> <!-- Fix this -->
   <span class="line"></span>
 
   <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
@@ -82,7 +82,7 @@
 
   $child_query = new WP_Query( $args );
   ?>
-  <h2 class="text-center">Nossos Serviços</h2> <!-- Fix this -->
+  <h2>Nossos Serviços</h2> <!-- Fix this -->
   <span class="line"></span>
 
   <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
@@ -108,7 +108,7 @@
   $your_query = new WP_Query( 'pagename=contato' );
   while ( $your_query->have_posts() ) : $your_query->the_post();
   ?>
-  <h2 class="text-center"><?php the_title(); ?></h2>
+  <h2><?php the_title(); ?></h2>
   <span class="line"></span>
   <?php the_content(); ?>
   <?php

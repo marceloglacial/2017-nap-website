@@ -74,36 +74,7 @@ body.logged .navbar-fixed-top {
 
 /*  Navbar
 -------------------------------------------------- */
-.navbar {
-  background: #FFF;
-  border: none;
-  text-transform: lowercase;
-  border-radius: 0;
-  min-height: 100px;
-}
-#navbar a {
-  color: #00171f;
-  font-size: 140%;
-  margin-top: 20px;
-  border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-#navbar .active a,
-#navbar a:hover {
-  background: #F5F5F5;
-}
-.navbar-brand  {
-  display: none;
-}
-.navbar-fixed-top .navbar-brand  {
-  display: block;
-}
-a.navbar-brand  {
-  height: 55px;
-  margin-top: 20px;
-  padding: 0 250px 0 50px;
-}
+
 
 /*  Content
 -------------------------------------------------- */

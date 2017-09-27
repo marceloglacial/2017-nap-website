@@ -34,23 +34,8 @@
       <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>
         <div class="blog-posts">
           <div class="blog-posts-img">
-
-            <?php // Get post image
-            $attachments = get_posts( array(
-              'post_type' => 'attachment',
-              'posts_per_page' => -1,
-              'post_parent' => $post->ID,
-            ) );
-            if ( $attachments ) {
-              foreach ( $attachments as $attachment ) {
-                $class = "post-attachment mime-" . sanitize_title( $attachment->post_mime_type );
-                $thumbimg = wp_get_attachment_image($attachment->ID, 320);
-                echo '<p class="' . $class . '">' . $thumbimg . '</p>';
-              };
-            };
-            ?>
+            <img src="<?php echo catch_that_image() ?>" alt="">
           </div>
-
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <span class="date"><?php echo get_the_date(); ?></span>
         </div>

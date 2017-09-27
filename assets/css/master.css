@@ -287,9 +287,9 @@ nav a {
   overflow: hidden;
   margin-bottom: 15px;
 }
-#Blog img {
-  width: 100%;
-  height: 100%;
+#Blog .blog-posts-img img {
+  width: 320px;
+  max-height: inherit;
 }
 #Blog h3 a {
   color: #FFF;

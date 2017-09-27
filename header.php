@@ -9,7 +9,7 @@
   <meta name="keywords" content="psicologia, avaliação psicológica, fortaleza, Centro de Serviço COGMED, Atendimento Clínico, Testoteca"/>
   <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png">
 
-  <title><?php bloginfo('name'); ?></title>
+  <title><?php bloginfo('name'); ?> <?php if(!is_home()) { ?> - <?php the_title(); }; ?></title>
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 

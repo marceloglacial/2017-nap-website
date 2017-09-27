@@ -2,7 +2,7 @@
 <nav class="navbar navbar-default navbar-fixed-top <?php if(is_home()) { ?>nav-home hidden<?php }; ?>" role="navigation">
   <div class="container-fluid">
     <!-- Mobile / Sandwich Menu -->
-    <div class="navbar-header">
+    <div class="navbar-header <?php if(!is_home()){ ?>brand-center<?php }; ?>">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>

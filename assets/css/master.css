@@ -254,8 +254,17 @@ nav a {
 
 /*  Blog
 -------------------------------------------------- */
+div.navbar-header.brand-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  float: none;
+}
+div.navbar-header.brand-center .navbar-brand {
+  padding-right: 0;
+  margin-left: 0px;
+}
 #Blog * {
-  /*outline: solid 1px #F00;*/
   margin: 0;
   padding: 0;
 }

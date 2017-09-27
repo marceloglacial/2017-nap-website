@@ -40,7 +40,7 @@
       ?>
       <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>
         <li><a href="<?php the_permalink(); ?>"><b><?php echo get_the_date(); ?></b> - <?php the_title(); ?></a></li>
-        <?php the_content(); ?>
+        <?php the_content();   ?>
       <?php endwhile; ?>
     </ul>
     <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>

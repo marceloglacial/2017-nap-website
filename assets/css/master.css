@@ -305,6 +305,15 @@ nav a {
   background: #FFF;
   font-size: 80%;
 }
+#Blog nav {
+  padding: 0 35px;
+}
+#Blog  nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #FFF;
+  background: #808285;
+}
 
 /*
 Responsive Mode (320, 768, 1024, 1200)

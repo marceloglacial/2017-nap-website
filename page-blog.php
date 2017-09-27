@@ -24,7 +24,7 @@
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       $query_args = array(
         'post_type' => 'post',
-        'posts_per_page' => 10,
+        'posts_per_page' => 3,
         'paged' => $paged
       );
       // create a new instance of WP_Query
@@ -44,18 +44,18 @@
       <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
         <nav class="prev-next-posts">
           <div class="prev-posts-link">
-            <?php echo get_next_posts_link( '< Older', $the_query->max_num_pages ); // display older posts link ?>
+            <?php echo get_next_posts_link( '< Anteriores', $the_query->max_num_pages ); // display older posts link ?>
           </div>
           <div class="next-posts-link">
-            <?php echo get_previous_posts_link( 'Newer >' ); // display newer posts link ?>
+            <?php echo get_previous_posts_link( 'Próximos >' ); // display newer posts link ?>
           </div>
         </nav>
       <?php } ?>
 
     <?php else: ?>
       <article>
-        <h4>Sorry...</h4>
-        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+        <h4>Desculpe</h4>
+        <p><?php _e('Nenhum conteúdo econtrado.'); ?></p>
       </article>
     <?php endif; ?>
   </article>

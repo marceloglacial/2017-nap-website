@@ -206,21 +206,20 @@ nav a {
   clear: both;
   background: url("../img/contato_bg.png") no-repeat bottom left;
   background-size: 35%;
-  min-height: 95vh;
+  min-height: 94vh;
   position: relative;
+  padding: 200px 50px 50px 50px;
 }
 #Contato h2 {
   text-align: left;
-}
-#Contato .line {
-  margin-bottom: 40px;
+  padding-bottom: 15px;
 }
 #Contato iframe {
-  max-height: 55vh;
-  max-width: 60%;
+  max-height: 60vh;
+  max-width: 50%;
   position: absolute;
-  top: 150px;
-  right: 20px;
+  top: 170px;
+  right: 80px;
 }
 
 
@@ -231,7 +230,7 @@ nav a {
   padding: 10px 30px;
   color: #FFF;
   background: #00BDD6;
-  text-align: right;
+  text-align: center;
 }
 
 #Foot a {

@@ -282,7 +282,6 @@ div.navbar-header.brand-center .navbar-brand {
 }
 #Blog .blog-posts {
   max-width: 320px;
-  min-width: 320px;
   height: 320px;
   overflow: hidden;
   display: inline-block;
@@ -298,7 +297,7 @@ div.navbar-header.brand-center .navbar-brand {
   margin-bottom: 15px;
 }
 #Blog .blog-posts-img img {
-  width: 320px;
+  max-width: 320px;
   max-height: inherit;
 }
 #Blog h2 a {
@@ -463,8 +462,21 @@ Responsive Mode (320, 768, 1024, 1200)
     text-align: center;
     font-size: 0.9em;
   }
-}
 
+  /* Blog */
+  div.navbar-header.brand-center {
+    width: 100%;
+    position: relative;
+    height: 70px;
+  }
+  div.navbar-header.brand-center .navbar-brand {
+    position: absolute;
+    margin: 0;
+    padding: 19px 0;
+    left: 45%;
+    transform: translate(-45%, 0);
+  }
+}
 @media (max-width: 320px) {
   body {
     font-size: 1.5em;

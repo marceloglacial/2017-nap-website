@@ -42,12 +42,12 @@ $(document).ready(function(){
 
       if(height  > 600) {
         // do something
-        $("nav").fadeIn();
-        $("nav").addClass("navbar-fixed-top");
-        $("nav").removeClass("hidden");
+        $("#Hero nav").fadeIn();
+        $("#Hero nav").addClass("navbar-fixed-top");
+        $("#Hero nav").removeClass("hidden");
       } else {
-        $("nav").removeClass("navbar-fixed-top");
-        $("nav").addClass("hidden");
+        $("#Hero nav").removeClass("navbar-fixed-top");
+        $("#Hero nav").addClass("hidden");
       };
     });
   } else {

@@ -44,7 +44,7 @@
             if ( $attachments ) {
               foreach ( $attachments as $attachment ) {
                 $class = "post-attachment mime-" . sanitize_title( $attachment->post_mime_type );
-                $thumbimg = wp_get_attachment_link( $attachment->ID, 'thumbnail-size', true );
+                $thumbimg = wp_get_attachment_image($attachment->ID, 320);
                 echo '<p class="' . $class . '">' . $thumbimg . '</p>';
               };
             };

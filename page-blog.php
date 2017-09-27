@@ -14,7 +14,7 @@
   <div class="container">
 
     <div class="pages-header">
-      <h2><?php the_title(); ?></h2>
+      <h2><a href="<?php bloginfo('url'); ?>/blog/"><?php the_title(); ?></a></h2>
     </div>
     <span class="line"></span>
     <article class="<?php echo basename(get_permalink()); ?>">

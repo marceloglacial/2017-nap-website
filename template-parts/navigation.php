@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default navbar-fixed-top hidden" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
   <div class="container-fluid">
     <!-- Mobile / Sandwich Menu -->
     <div class="navbar-header">
@@ -9,16 +9,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#Top"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo_small.png" alt="logo small"></a>
+      <a class="navbar-brand" href="<?php if(is_home()) { ?> #Top <?php } else { bloginfo('url'); }; ?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo_small.png" alt="logo small"></a>
     </div>
+
     <?php
-    if ( is_home() ) {      
-      wp_nav_menu( array(
+    if (is_home()) {
+      wp_nav_menu(array(
         'container_id'     => 'navbar',
         'container_class'  => 'collapse navbar-collapse',
         'menu_id'          => 'navbar',
         'menu_class'       => 'nav nav-justified nav-pills',
-      ) );
-    }; ?>
+      ));
+    };
+    ?>
   </div>
 </nav>

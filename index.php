@@ -50,11 +50,11 @@
 
   $child_query = new WP_Query( $args );
   ?>
+
   <h2>Nossa Equipe</h2> <!-- Fix this -->
   <span class="line"></span>
 
   <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
-
     <div class="card">
       <?php
       if ( has_post_thumbnail() ) {

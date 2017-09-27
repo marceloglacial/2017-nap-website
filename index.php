@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 
-<div id="Hero" class="container-fluid">
+<div id="Hero">
   <header>
     <h1><?php bloginfo('name'); ?></h1>
   </header>
@@ -16,9 +16,9 @@
 <?php get_template_part( '/template-parts/navigation'); ?>
 
 <!-- Content -->
-<section class="container">
+<section>
 
-  <div id="Quem" class="content row">
+  <div id="Quem" class="content">
     <?php
     $your_query = new WP_Query( 'pagename=quem-somos' );
     while ( $your_query->have_posts() ) : $your_query->the_post();
@@ -38,7 +38,7 @@
 </div><!-- /Quem -->
 <span class="clear"></span>
 
-<div id="Equipe" class="content row">
+<div id="Equipe" class="content">
   <?php
   $args = array(
     'post_parent' => 11,
@@ -72,7 +72,7 @@
 <span class="clear"></span>
 
 
-<div id="Servicos" class="content row">
+<div id="Servicos" class="content">
   <?php
   $args = array(
     'post_parent' => 34,
@@ -87,7 +87,7 @@
 
   <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
 
-    <div class="card col-md-4">
+    <div class="card">
       <?php
       if ( has_post_thumbnail() ) {
         the_post_thumbnail('page-thumb');
@@ -103,13 +103,12 @@
   ?>
 </div><!-- /Servicos -->
 <span class="clear"></span>
-<div id="Contato" class="content row">
+<div id="Contato" class="content">
   <?php
   $your_query = new WP_Query( 'pagename=contato' );
   while ( $your_query->have_posts() ) : $your_query->the_post();
   ?>
   <h2><?php the_title(); ?></h2>
-  <span class="line"></span>
   <?php the_content(); ?>
   <?php
 endwhile;

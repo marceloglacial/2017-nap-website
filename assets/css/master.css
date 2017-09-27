@@ -21,6 +21,7 @@ img {
 }
 h2 {
   color: #000;
+  text-align: center;
 }
 h3 {
   color: #00BDD6;
@@ -87,10 +88,6 @@ body.logged .navbar-fixed-top {
   }
 }
 
-.clear {
-  clear: both !important;
-}
-
 /*  Navbar
 -------------------------------------------------- */
 
@@ -120,11 +117,13 @@ nav a {
 
 /*  Content
 -------------------------------------------------- */
+.content {
+  padding: 30px;
+}
 #Quem, #Servicos, #Equipe, #Contato {
   padding-top: 120px;
   min-height: 100vh;
 }
-
 .line {
   display: block;
   margin: 5px auto;
@@ -138,6 +137,7 @@ nav a {
 
 #Quem h2 {
   padding: 40px 0 20px 20px;
+  text-align: left;
 }
 
 #Quem .line {
@@ -154,17 +154,38 @@ nav a {
 }
 
 #Equipe .card {
-  padding: 40px;
+  padding: 50px;
 }
 
 #Equipe img {
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+}
+#Equipe h3 {
+  line-height: 120%;
+  letter-spacing: -1px;
 }
 
-#Equipe h3 {
-  line-height: 130%;
-  margin-bottom: 0;
+/*  Servicos
+-------------------------------------------------- */
+#Servicos {
+  clear: both;
+  color: #FFF;
+  background: #00BDD6;
+}
+#Servicos h2 {
+  color: #FFF;
+  font-weight: bold;
+}
+#Servicos h3 {
+  color: #FFF;
+  letter-spacing: -1px;
+  }
+#Servicos .line {
+  background: #FFF;
+}
+#Servicos .card {
+  padding: 20px 50px;
 }
 
 /*  Entre em Contato
@@ -176,14 +197,17 @@ nav a {
   min-height: 95vh;
   position: relative;
 }
+#Contato h2 {
+  text-align: left;
+}
 #Contato .line {
   margin-bottom: 40px;
 }
 #Contato iframe {
   max-height: 55vh;
-  max-width: 65%;
+  max-width: 60%;
   position: absolute;
-  top: 230px;
+  top: 150px;
   right: 20px;
 }
 
@@ -258,9 +282,6 @@ Responsive Mode (320, 768, 1024, 1200)
     padding-left: 30px;
     padding-right: 0px;
   }
-  #Main {
-    text-align: center;
-  }
   #Quem, #Equipe, #Servicos, #Contato {
     padding: 120px 30px 50px 30px;
   }
@@ -273,26 +294,10 @@ Responsive Mode (320, 768, 1024, 1200)
   #Quem h2 {
     text-align: center;
     padding: 0 0 20px 0;
+    color: #FFF;
   }
   #Equipe {
     background-size: 80%;
-  }
-  #Servicos {
-    background: url("../img/hero_bg.png") no-repeat top right;
-    background-size: cover;
-    color: #FFF;
-    text-align: left;
-  }
-  #Servicos h3 {
-    color: #000;
-    font-weight: bold;
-  }
-  #Servicos .line {
-    background: #FFF;
-    margin-bottom: 70px;
-  }
-  #Servicos .card {
-    padding-bottom: 30px;
   }
   #Contato iframe {
     position: static;
@@ -332,12 +337,7 @@ Responsive Mode (320, 768, 1024, 1200)
   #Quem, #Equipe, #Servicos, #Contato {
     padding-top: 90px;
   }
-  #Quem h2,
-  #Servicos h2 {
+  #Quem h2 {
     color: #FFF;
-  }
-  #Servicos h3 {
-    color: #FFF;
-    letter-spacing: -1px;
   }
 }

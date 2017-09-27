@@ -38,11 +38,13 @@
 </div><!-- /Quem -->
 
 <div id="Equipe" class="content">
+
   <?php
   $args = array(
     'post_parent' => 11,
     'post_type' => 'page',
-    'order' => 'ASC'
+    'order' => 'ASC',
+    'orderby' => 'title'
   );
 
   $child_query = new WP_Query( $args );
@@ -73,7 +75,8 @@
   $args = array(
     'post_parent' => 34,
     'post_type' => 'page',
-    'order' => 'ASC'
+    'order' => 'ASC',
+    'orderby' => 'title'
   );
 
   $child_query = new WP_Query( $args );

@@ -19,7 +19,6 @@
     <span class="line"></span>
     <article class="<?php echo basename(get_permalink()); ?>">
 
-
       <?php
       // Source: http://callmenick.com/post/custom-wordpress-loop-with-pagination
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
@@ -31,27 +30,31 @@
       // create a new instance of WP_Query
       $the_query = new WP_Query( $query_args );
       ?>
+
       <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>
-        <article class="">
-          <?php // Get post image
-          $attachments = get_posts( array(
-            'post_type' => 'attachment',
-            'posts_per_page' => -1,
-            'post_parent' => $post->ID,
-          ) );
-          if ( $attachments ) {
-            foreach ( $attachments as $attachment ) {
-              $class = "post-attachment mime-" . sanitize_title( $attachment->post_mime_type );
-              $thumbimg = wp_get_attachment_link( $attachment->ID, 'thumbnail-size', true );
-              echo '<p class="' . $class . '">' . $thumbimg . '</p>';
+        <div class="blog-posts">
+          <div class="blog-posts-img">
+
+            <?php // Get post image
+            $attachments = get_posts( array(
+              'post_type' => 'attachment',
+              'posts_per_page' => -1,
+              'post_parent' => $post->ID,
+            ) );
+            if ( $attachments ) {
+              foreach ( $attachments as $attachment ) {
+                $class = "post-attachment mime-" . sanitize_title( $attachment->post_mime_type );
+                $thumbimg = wp_get_attachment_link( $attachment->ID, 'thumbnail-size', true );
+                echo '<p class="' . $class . '">' . $thumbimg . '</p>';
+              };
             };
-          };
-          ?>
+            ?>
+          </div>
 
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <em><?php echo get_the_date(); ?></em>
-        <?php endwhile; ?>
-      </article>
+          <span class="date"><?php echo get_the_date(); ?></span>
+        </div>
+      <?php endwhile; ?>
 
       <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
         <nav class="prev-next-posts">

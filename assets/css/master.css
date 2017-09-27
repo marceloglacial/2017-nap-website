@@ -2,6 +2,16 @@
 * Project: NAP 2017
 * Author: Marcelo Glacial
 * Starts on: 23/01/2017
+
+* Color Pallete
+
+Blue Light: #00BED7
+Blue Middle: #76CED9
+Blue Soft: #B0DFDC
+Grey: #808285
+*
+
+
 */
 
 /*  General
@@ -23,7 +33,7 @@ h2 {
   color: #000;
 }
 h3 {
-  color: #00BDD6;
+  color: #00BED7;
 }
 
 p {
@@ -113,7 +123,7 @@ nav a {
   color: #000;
 }
 .nav>li>a:focus, .nav>li>a:hover, .nav-pills>li.active>a:hovervvbvbvbbbvbb {
-  background: #00BDD6;
+  background: #00BED7;
   color: #FFF;
 }
 
@@ -130,7 +140,7 @@ nav a {
   display: block;
   width: 100px;
   height: 5px;
-  background: #00BDD6;
+  background: #00BED7;
 }
 
 /*  Quem Somos
@@ -179,7 +189,7 @@ nav a {
   color: #FFF;
   background: url("../img/hero_bg.png") fixed bottom right;
   background-size: cover;
-  background-color: #00BDD6;
+  background-color: #00BED7;
 }
 #Servicos h2 {
   color: #FFF;
@@ -229,7 +239,7 @@ nav a {
 #Foot {
   padding: 10px 30px;
   color: #FFF;
-  background: #00BDD6;
+  background: #00BED7;
   text-align: center;
 }
 
@@ -251,30 +261,27 @@ nav a {
 #Blog {
   padding: 120px 50px 50px 50px;
   background: url("../img/blog_bg.png") no-repeat bottom right fixed;
-  background-size: 800px;
+  background-size: 300px;
   min-height: 94vh;
 }
 #Blog h2 {
   text-align: center;
 }
 #Blog .line {
-  margin: 10px auto 30px auto;
+  margin: 10px auto 0 auto;
 }
 #Blog .blog-posts {
-  max-width: 365px;
-  height: 340px;
+  max-width: 320px;
+  height: 320px;
   overflow: hidden;
   display: inline-block;
   vertical-align: top;
-  background: #00BDD6;
+  background: #00BED7;
   position: relative;
-  margin-right: 34px;
-}
-#Blog .blog-posts:last-of-type {
-  margin-right: 0;
+  margin: 34px;
 }
 #Blog .blog-posts-img {
-  max-height: 240px;
+  max-height: 205px;
   overflow: hidden;
   margin-bottom: 15px;
 }
@@ -282,12 +289,12 @@ nav a {
   color: #FFF;
   font-size: 70%;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 20px;
   line-height: 1.5em;
 }
 #Blog .date {
   position: absolute;
-  top: 205px;
+  top: 190px;
   padding: 10px;
   background: #FFF;
   font-size: 80%;

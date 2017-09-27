@@ -9,7 +9,7 @@
 <?php get_template_part( '/template-parts/navigation'); ?>
 
 <!-- Content -->
-<section>
+<section id="Blog">
 
   <div class="container">
 

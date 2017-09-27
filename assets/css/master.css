@@ -241,6 +241,21 @@ nav a {
   text-decoration: underline;
 }
 
+/*  Blog
+-------------------------------------------------- */
+#Blog {
+  padding: 150px 50px 250px 50px;
+  background: url("../img/blog_bg.png") no-repeat bottom right fixed;
+}
+#Blog article {
+  max-width: 600px;
+}
+#Blog img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100px;
+}
+
 /*
 Responsive Mode (320, 768, 1024, 1200)
 =======================================================

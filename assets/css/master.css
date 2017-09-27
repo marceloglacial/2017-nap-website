@@ -183,7 +183,7 @@ nav a {
 }
 #Servicos h2 {
   color: #FFF;
-  padding-left: 20px;
+  padding: 30px 0 0 20px;
 }
 #Servicos h3 {
   color: #FFF;
@@ -329,6 +329,10 @@ Responsive Mode (320, 768, 1024, 1200)
     min-width: 100%;
     min-height: 50vh;
     padding: 30px 0 0 0;
+  }
+  #Contato a {
+    display: block;
+    padding-bottom: 15px;
   }
   #Foot {
     text-align: center;

@@ -1,0 +1,372 @@
+/*
+* Project: NAP 2017
+* Author: Marcelo Glacial
+* Starts on: 23/01/2017
+*/
+
+/*  General
+-------------------------------------------------- */
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  color: #808285;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+h2 {
+  color: #000;
+}
+h3 {
+  color: #00BDD6;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body.logged .navbar-fixed-top {
+  margin-top: 32px;
+}
+.clear {
+  display: block;
+  clear: both;
+}
+/*  Header hero
+-------------------------------------------------- */
+
+#Hero {
+  background: url("../img/hero_bg.png") fixed bottom;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#Hero h1 {
+  text-indent: -99999px;
+  background: url("../img/logo_white.png") no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url("../img/arrow.png");
+  background-size: cover;
+  text-indent: -99999px;
+  bottom: 50px;
+  left: 48%;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+}
+
+/*  Navbar
+-------------------------------------------------- */
+
+nav a {
+  color: #000;
+  text-transform: lowercase;
+}
+.navbar  {
+  background: #FFF;
+}
+.navbar-brand {
+  height: 80px;
+  padding-left: 50px;
+  padding-right: 250px;
+}
+.nav-pills {
+  margin-top: 20px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background: #FFF;
+  color: #000;
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav-pills>li.active>a:hovervvbvbvbbbvbb {
+  background: #00BDD6;
+  color: #FFF;
+}
+
+/*  Content
+-------------------------------------------------- */
+.content {
+  padding: 30px;
+}
+#Quem, #Servicos, #Equipe, #Contato {
+  padding-top: 110px;
+  min-height: 100vh;
+}
+.line {
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: #00BDD6;
+}
+
+/*  Quem Somos
+-------------------------------------------------- */
+
+#Quem h2 {
+  padding: 40px 0 20px 20px;
+}
+
+#Quem .line {
+  display: none;
+}
+
+/*  Nossa Equipe
+-------------------------------------------------- */
+
+#Equipe {
+  background: url("../img/equipe_bg.png") no-repeat fixed center;
+  background-size: 40%;
+  text-align: center;
+}
+#Equipe .line {
+  margin: 5px auto;
+}
+#Equipe .card {
+  display: inline-block;
+  width: 33%;
+  overflow: hidden;
+  vertical-align: top;
+  padding: 50px;
+}
+
+#Equipe img {
+  max-width: 100px;
+  max-height: 100px;
+}
+#Equipe h3 {
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
+/*  Servicos
+-------------------------------------------------- */
+#Servicos {
+  clear: both;
+  color: #FFF;
+  background: url("../img/hero_bg.png") fixed bottom right;
+  background-size: cover;
+  background-color: #00BDD6;
+}
+#Servicos h2 {
+  color: #FFF;
+  padding: 30px 0 0 20px;
+}
+#Servicos h3 {
+  color: #FFF;
+  letter-spacing: -1px;
+}
+#Servicos .line {
+  background: #FFF;
+  margin-left: 20px;
+}
+#Servicos .card {
+  padding: 20px;
+  width: 50%;
+  float: left;
+}
+
+/*  Entre em Contato
+-------------------------------------------------- */
+
+#Contato {
+  clear: both;
+  background: url("../img/contato_bg.png") no-repeat bottom left;
+  background-size: 35%;
+  min-height: 94vh;
+  position: relative;
+  padding: 200px 50px 50px 50px;
+}
+#Contato h2 {
+  text-align: left;
+  padding-bottom: 15px;
+}
+#Contato iframe {
+  max-height: 60vh;
+  max-width: 50%;
+  position: absolute;
+  top: 170px;
+  right: 80px;
+}
+
+
+/*  Footer
+-------------------------------------------------- */
+
+#Foot {
+  padding: 10px 30px;
+  color: #FFF;
+  background: #00BDD6;
+  text-align: center;
+}
+
+#Foot a {
+  color: #FFF;
+}
+#Foot strong {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+/*
+Responsive Mode (320, 768, 1024, 1200)
+=======================================================
+*/
+@media (min-width: 1400px) {
+  .content, .navbar div {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.7em;
+    line-height: 2em;
+  }
+  body.logged #wpadminbar {
+    position: fixed;
+  }
+  body.logged .navbar-fixed-top {
+    margin-top: 46px;
+  }
+  body.logged #Quem, body.logged #Equipe, body.logged #Servicos, body.logged #Contato {
+    padding-top: 166px;
+  }
+  #Hero {
+    display: none;
+  }
+  .navbar {
+    border-bottom: solid 1px #F0F0F0;
+  }
+  .navbar-default .navbar-toggle {
+    border: none;
+    margin: 15px 15px 0 0;
+  }
+  .navbar-toggle .icon-bar {
+    width: 35px;
+    margin-bottom: 6px;
+  }
+  .navbar-default .navbar-toggle:hover {
+    background: none;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+    max-height: 100%;
+    padding-bottom: 20px;
+  }
+  .navbar-brand {
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+  #Quem, #Equipe, #Servicos, #Contato {
+    padding: 120px 20px 50px 20px;
+  }
+  #Equipe .card,
+  #Servicos .card {
+    padding: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  #Quem {
+    color: #FFF;
+    text-align: justify;
+    background: url("../img/hero_bg.png") top no-repeat;
+    background-size: cover;
+  }
+  #Quem h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #FFF;
+  }
+  #Equipe {
+    background-size: 80%;
+  }
+  #Servicos {
+    text-align: center;
+  }
+  #Servicos .line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #Contato iframe {
+    position: static;
+    min-width: 100%;
+    min-height: 50vh;
+    padding: 30px 0 0 0;
+  }
+  #Contato a {
+    display: block;
+    padding-bottom: 15px;
+  }
+  #Foot {
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 1.5em;
+  }
+  body.logged #Quem, body.logged #Equipe, body.logged #Servicos, body.logged #Contato {
+    padding-top: 136px;
+  }
+  nav {
+    display: block;
+  }
+  .navbar {
+    min-height: 50px;
+  }
+  .navbar-brand {
+    padding: 15px;
+  }
+  .navbar-default .navbar-toggle {
+    margin: 18px 12px 0 0;
+  }
+  .navbar-toggle .icon-bar {
+    width: 25px;
+    margin-bottom: 2px;
+  }
+  #Quem, #Equipe, #Servicos, #Contato {
+    padding-top: 90px;
+  }
+  #Quem h2 {
+    color: #FFF;
+  }
+}

@@ -34,7 +34,7 @@
       <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>
         <div class="blog-posts">
           <div class="blog-posts-img">
-            <img src="<?php echo catch_that_image() ?>" alt="">
+            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo catch_that_image() ?>" alt="<?php the_title(); ?>"></a>
           </div>
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <span class="date"><?php echo get_the_date(); ?></span>

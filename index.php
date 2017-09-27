@@ -40,8 +40,9 @@
 <div id="Equipe" class="content">
 
   <?php
+  $pgname = get_page_by_title('Nossa Equipe');
   $args = array(
-    'post_parent' => 11,
+    'post_parent' => $pgname->ID,
     'post_type' => 'page',
     'order' => 'ASC',
     'orderby' => 'title'
@@ -72,8 +73,9 @@
 
 <div id="Servicos" class="content">
   <?php
+  $pgname = get_page_by_title('Nossos Serviços');
   $args = array(
-    'post_parent' => 34,
+    'post_parent' => $pgname->ID,
     'post_type' => 'page',
     'order' => 'ASC',
     'orderby' => 'title'

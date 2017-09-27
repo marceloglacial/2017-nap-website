@@ -21,7 +21,6 @@ img {
 }
 h2 {
   color: #000;
-  text-align: center;
 }
 h3 {
   color: #00BDD6;
@@ -39,7 +38,10 @@ ul {
 body.logged .navbar-fixed-top {
   margin-top: 32px;
 }
-
+.clear {
+  display: block;
+  clear: both;
+}
 /*  Header hero
 -------------------------------------------------- */
 
@@ -126,7 +128,6 @@ nav a {
 }
 .line {
   display: block;
-  margin: 5px auto;
   width: 100px;
   height: 5px;
   background: #00BDD6;
@@ -137,7 +138,6 @@ nav a {
 
 #Quem h2 {
   padding: 40px 0 20px 20px;
-  text-align: left;
 }
 
 #Quem .line {
@@ -152,7 +152,9 @@ nav a {
   background-size: 40%;
   text-align: center;
 }
-
+#Equipe .line {
+  margin: 5px auto;
+}
 #Equipe .card {
   padding: 50px;
 }
@@ -171,11 +173,13 @@ nav a {
 #Servicos {
   clear: both;
   color: #FFF;
-  background: #00BDD6;
+  background: url("../img/hero_bg.png") fixed;
+
+  background-color: #00BDD6;
 }
 #Servicos h2 {
   color: #FFF;
-  font-weight: bold;
+  padding-left: 20px;
 }
 #Servicos h3 {
   color: #FFF;
@@ -183,15 +187,19 @@ nav a {
   }
 #Servicos .line {
   background: #FFF;
+  margin-left: 20px;
 }
 #Servicos .card {
-  padding: 20px 50px;
+  padding: 20px;
+  width: 50%;
+  float: left;
 }
 
 /*  Entre em Contato
 -------------------------------------------------- */
 
 #Contato {
+  clear: both;
   background: url("../img/contato_bg.png") no-repeat bottom left;
   background-size: 35%;
   min-height: 95vh;

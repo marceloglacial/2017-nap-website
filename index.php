@@ -36,7 +36,6 @@
     <img src="<?php bloginfo('template_url'); ?>/assets/img/bigbluecloud.png" alt="clouds" class="img-responsive">
   </div>
 </div><!-- /Quem -->
-<span class="clear"></span>
 
 <div id="Equipe" class="content">
   <?php
@@ -69,9 +68,6 @@
   ?>
 </div><!-- /Equipe -->
 
-<span class="clear"></span>
-
-
 <div id="Servicos" class="content">
   <?php
   $args = array(
@@ -101,8 +97,9 @@
   <?php
   wp_reset_postdata();
   ?>
+  <span class="clear"></span>
 </div><!-- /Servicos -->
-<span class="clear"></span>
+
 <div id="Contato" class="content">
   <?php
   $your_query = new WP_Query( 'pagename=contato' );

@@ -103,7 +103,7 @@ nav a {
 .navbar-brand {
   height: 80px;
   padding-left: 50px;
-  padding-right: 100px;
+  padding-right: 250px;
 }
 .nav-pills {
   margin-top: 20px;
@@ -156,6 +156,10 @@ nav a {
   margin: 5px auto;
 }
 #Equipe .card {
+  display: inline-block;
+  width: 33%;
+  overflow: hidden;
+  vertical-align: top;
   padding: 50px;
 }
 
@@ -173,8 +177,8 @@ nav a {
 #Servicos {
   clear: both;
   color: #FFF;
-  background: url("../img/hero_bg.png") fixed;
-
+  background: url("../img/hero_bg.png") fixed bottom right;
+  background-size: cover;
   background-color: #00BDD6;
 }
 #Servicos h2 {
@@ -184,7 +188,7 @@ nav a {
 #Servicos h3 {
   color: #FFF;
   letter-spacing: -1px;
-  }
+}
 #Servicos .line {
   background: #FFF;
   margin-left: 20px;
@@ -243,7 +247,7 @@ Responsive Mode (320, 768, 1024, 1200)
 =======================================================
 */
 @media (min-width: 1400px) {
-  .navbar div {
+  .content, .navbar div {
     max-width: 1366px;
     margin: 0 auto;
   }
@@ -291,8 +295,15 @@ Responsive Mode (320, 768, 1024, 1200)
     padding-right: 0px;
   }
   #Quem, #Equipe, #Servicos, #Contato {
-    padding: 120px 30px 50px 30px;
+    padding: 120px 20px 50px 20px;
   }
+  #Equipe .card,
+  #Servicos .card {
+    padding: 20px;
+    display: block;
+    width: 100%;
+  }
+
   #Quem {
     color: #FFF;
     text-align: justify;
@@ -306,6 +317,13 @@ Responsive Mode (320, 768, 1024, 1200)
   }
   #Equipe {
     background-size: 80%;
+  }
+  #Servicos {
+    text-align: center;
+  }
+  #Servicos .line {
+    margin-left: auto;
+    margin-right: auto;
   }
   #Contato iframe {
     position: static;

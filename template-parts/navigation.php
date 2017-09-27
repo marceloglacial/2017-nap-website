@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top <?php if(is_home()) { ?>nav-home hidden<?php }; ?>" role="navigation">
   <div class="container-fluid">
     <!-- Mobile / Sandwich Menu -->
     <div class="navbar-header">

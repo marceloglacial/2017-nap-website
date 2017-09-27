@@ -39,18 +39,14 @@ $(document).ready(function(){
   {
     $(window).scroll(function() {
       var height = $(window).scrollTop();
-
       if(height  > 600) {
-        // do something
-        $("nav").fadeIn();
-        $("nav").addClass("navbar-fixed-top");
-        $("nav").removeClass("hidden");
+        $("nav.nav-home").fadeIn();
+        $("nav.nav-home").removeClass("hidden");
       } else {
-        $("nav").removeClass("navbar-fixed-top");
-        $("nav").addClass("hidden");
+        $("nav.nav-home").addClass("hidden");
       };
     });
-  } else {
-    $("nav").removeClass("hidden");
+  } else { // mobile
+    $("nav.nav-home").removeClass("hidden");
   };
 });

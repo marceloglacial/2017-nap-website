@@ -11,7 +11,7 @@
 <!-- Content -->
 <section id="Blog">
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="pages-header">
       <h2><a href="<?php bloginfo('url'); ?>/blog/">Blog</a></h2>
     </div>

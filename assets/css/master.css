@@ -337,22 +337,23 @@ div.navbar-header.brand-center .navbar-brand {
   color: #FFF;
   background: #808285;
 }
+
+/* Blog single */
+
 #Blog .blog-post {
-  max-width: 700px;
-  margin: 50px auto;
+  max-width: 60%;
+  margin: 0 auto;
+}
+#Blog .blog-post h3 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 350%;
 }
 #Blog .blog-post p {
   padding-bottom: 1.3em;
   text-align: justify;
 }
-#Blog .blog-post h3 {
-  font-size: 4em;
-  letter-spacing: -3px;
-  text-align: center;
-  padding-bottom: 60px;
-}
 #Blog .blog-post img {
-  margin: 20px auto;
   height: inherit;
 }
 #Blog .post-date {
@@ -387,6 +388,9 @@ Responsive Mode (320, 768, 1024, 1200)
   }
   #Blog nav {
     padding: 0 25px;
+  }
+  #Blog .blog-post {
+    max-width: 90%;
   }
 }
 @media (max-width: 768px) {
@@ -503,8 +507,16 @@ Responsive Mode (320, 768, 1024, 1200)
   #Blog nav {
     padding: 0 0 20px 0;
   }
-
-
+  #Blog .blog-post {
+    max-width: 95%;
+  }
+  #Blog .blog-post h3 {
+    font-size: 200%;
+  }
+  #Blog .post-date {
+    width: 100%;
+    padding: 5px 0;
+  }
 }
 @media (max-width: 320px) {
   body {

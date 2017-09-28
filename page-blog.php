@@ -11,7 +11,7 @@
 <!-- Content -->
 <section id="Blog">
 
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="pages-header">
       <h2><a href="<?php bloginfo('url'); ?>/blog/"><?php the_title(); ?></a></h2>
@@ -58,6 +58,7 @@
         <p><?php _e('Nenhum conteúdo econtrado.'); ?></p>
       </article>
     <?php endif; ?>
+    <span class="clear"></span>
   </article>
 </div>
 

@@ -269,35 +269,14 @@ div.navbar-header.brand-center .navbar-brand {
   padding: 0;
 }
 #Blog {
-  padding: 120px 50px 50px 50px;
   background: url("../img/blog_bg.png") no-repeat bottom right fixed;
   background-size: 300px;
+  width: 100%;
   min-height: 94vh;
 }
 #Blog h2 {
   text-align: center;
-}
-#Blog .line {
-  margin: 0 auto;
-}
-#Blog .blog-posts {
-  max-width: 320px;
-  min-height: 320px;
-  display: inline-block;
-  vertical-align: top;
-  background: #00BED7;
-  position: relative;
-  margin: 33px;
-}
-#Blog .blog-posts-img {
-  background: #000;
-  height: 205px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-#Blog .blog-posts-img img {
-  width: 320px;
-  max-height: inherit;
+  padding-top: 100px;
 }
 #Blog h2 a {
   color: #000;
@@ -310,22 +289,47 @@ div.navbar-header.brand-center .navbar-brand {
   color: #FFF;
   text-decoration: none;
 }
+#Blog .line {
+  margin: 0 auto;
+}
+#Blog article {
+  padding: 40px;
+}
+#Blog .blog-posts {
+  display: inline-block;
+  width: 33%;
+  padding: 30px;
+  vertical-align: top;
+  position: relative;
+}
+#Blog .blog-posts-img {
+  background: #000; /* put nap-logo grey */
+  height: 205px;
+  overflow: hidden;
+}
+#Blog .blog-posts-img img {
+  max-height: inherit;
+}
 #Blog h3 a {
+  display: inline-block;
   color: #FFF;
   font-size: 70%;
-  display: inline-block;
-  padding: 20px 20px;
+  width: 100%;
+  min-height: 105px;
+  padding: 35px 20px 20px 20px;
   line-height: 1.5em;
+  background: #00BED7;
 }
 #Blog .date {
   position: absolute;
-  top: 190px;
+  top: 215px;
   padding: 10px;
   background: #FFF;
   font-size: 80%;
 }
 #Blog nav {
-  padding: 0 35px;
+  clear: both;
+  padding: 0 30px;
 }
 #Blog  nav a {
   display: inline-block;
@@ -364,17 +368,27 @@ div.navbar-header.brand-center .navbar-brand {
   color: #FFF;
 }
 
+
+
 /*
 Responsive Mode (320, 768, 1024, 1200)
 =======================================================
 */
 @media (min-width: 1400px) {
-  .content, .navbar div {
+  .content, .navbar div, #Blog {
     max-width: 1366px;
     margin: 0 auto;
   }
 }
-
+@media (max-width: 1112px) { /* iPad Pro */
+  #Blog .blog-posts {
+    width: 49%;
+    padding: 25px;
+  }
+  #Blog nav {
+    padding: 0 25px;
+  }
+}
 @media (max-width: 768px) {
   body {
     font-size: 1.7em;
@@ -475,27 +489,22 @@ Responsive Mode (320, 768, 1024, 1200)
     left: 45%;
     transform: translate(-45%, 0);
   }
-  #Blog {
-    padding: 100px 0 50px 7px;
+  #Blog article {
+    padding: 30px;
   }
-  #Blog h3 a {
-    padding-top: 25px;
+  #Blog .blog-posts {
+    width: 100%;
+    padding: 0 0 50px 0;
   }
   #Blog .date {
-    top: 180px;
+    top: 185px;
+    padding: 5px 20px;
   }
-  #Blog .blog-post {
-    margin:25px;
+  #Blog nav {
+    padding: 0 0 20px 0;
   }
-  #Blog .blog-post h3 {
-    font-size: 200%;
-    padding: 30px 0 60px 0;
-    letter-spacing: -1px;
-  }
-  #Blog .post-date {
-    width: 100%;
-    padding: 10px;
-  }
+
+
 }
 @media (max-width: 320px) {
   body {

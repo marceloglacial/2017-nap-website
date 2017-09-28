@@ -31,22 +31,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-
-
-// display menu after scrolling
-$(document).ready(function(){
-  if($(window).width() > 767) // only for desktop resolution
-  {
-    $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if(height  > 600) {
-        $("nav.nav-home").fadeIn();
-        $("nav.nav-home").removeClass("hidden");
-      } else {
-        $("nav.nav-home").addClass("hidden");
-      };
-    });
-  } else { // mobile
-    $("nav.nav-home").removeClass("hidden");
-  };
-});

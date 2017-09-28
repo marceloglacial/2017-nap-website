@@ -26,31 +26,8 @@ $(document).ready(function(){
       }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        //window.location.hash = hash;
       });
     } // End if
   });
-});
-
-
-// display menu after scrolling
-$(document).ready(function(){
-  if($(window).width() > 767) // only for desktop resolution
-  {
-    $(window).scroll(function() {
-      var height = $(window).scrollTop();
-
-      if(height  > 600) {
-        // do something
-        $("nav").fadeIn();
-        $("nav").addClass("navbar-fixed-top");
-        $("nav").removeClass("hidden");
-      } else {
-        $("nav").removeClass("navbar-fixed-top");
-        $("nav").addClass("hidden");
-      };
-    });
-  } else {
-    $("nav").removeClass("hidden");
-  };
 });

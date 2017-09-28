@@ -2,6 +2,16 @@
 * Project: NAP 2017
 * Author: Marcelo Glacial
 * Starts on: 23/01/2017
+
+* Color Pallete
+
+Blue Light: #00BED7
+Blue Middle: #76CED9
+Blue Soft: #B0DFDC
+Grey: #808285
+*
+
+
 */
 
 /*  General
@@ -12,6 +22,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
   color: #808285;
 }
 
@@ -23,13 +34,12 @@ h2 {
   color: #000;
 }
 h3 {
-  color: #00BDD6;
+  color: #00BED7;
 }
 
 p {
   line-height: 1.8em;
 }
-
 ul {
   list-style: none;
   padding: 0;
@@ -51,6 +61,7 @@ body.logged .navbar-fixed-top {
   position: relative;
   width: 100%;
   height: 100vh;
+  z-index: 9999;
 }
 
 #Hero h1 {
@@ -93,7 +104,8 @@ body.logged .navbar-fixed-top {
 /*  Navbar
 -------------------------------------------------- */
 
-nav a {
+nav a,
+nav a:hover {
   color: #000;
   text-transform: lowercase;
 }
@@ -103,7 +115,7 @@ nav a {
 .navbar-brand {
   height: 80px;
   padding-left: 50px;
-  padding-right: 250px;
+  padding-right: 120px;
 }
 .nav-pills {
   margin-top: 20px;
@@ -113,7 +125,7 @@ nav a {
   color: #000;
 }
 .nav>li>a:focus, .nav>li>a:hover, .nav-pills>li.active>a:hovervvbvbvbbbvbb {
-  background: #00BDD6;
+  background: #00BED7;
   color: #FFF;
 }
 
@@ -130,7 +142,7 @@ nav a {
   display: block;
   width: 100px;
   height: 5px;
-  background: #00BDD6;
+  background: #00BED7;
 }
 
 /*  Quem Somos
@@ -179,7 +191,7 @@ nav a {
   color: #FFF;
   background: url("../img/hero_bg.png") fixed bottom right;
   background-size: cover;
-  background-color: #00BDD6;
+  background-color: #00BED7;
 }
 #Servicos h2 {
   color: #FFF;
@@ -229,7 +241,7 @@ nav a {
 #Foot {
   padding: 10px 30px;
   color: #FFF;
-  background: #00BDD6;
+  background: #00BED7;
   text-align: center;
 }
 
@@ -241,17 +253,149 @@ nav a {
   text-decoration: underline;
 }
 
+/*  Blog
+-------------------------------------------------- */
+div.navbar-header.brand-center {
+  width: 100%;
+  position: relative;
+  height: 70px;
+}
+div.navbar-header.brand-center .navbar-brand {
+  position: absolute;
+  margin: 0;
+  padding: 19px 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#Blog * {
+  margin: 0;
+  padding: 0;
+}
+#Blog {
+  background: url("../img/blog_bg.png") no-repeat bottom right fixed;
+  background-size: 300px;
+  width: 100%;
+  min-height: 94vh;
+}
+#Blog h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+#Blog h2 a {
+  color: #000;
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+}
+#Blog h2 a:hover {
+  background: #00BED7;
+  color: #FFF;
+  text-decoration: none;
+}
+#Blog .line {
+  margin: 0 auto;
+}
+#Blog article {
+  padding: 40px;
+}
+#Blog .blog-posts {
+  display: inline-block;
+  width: 33%;
+  padding: 30px;
+  vertical-align: top;
+  position: relative;
+}
+#Blog .blog-posts-img {
+  background: #000; /* put nap-logo grey */
+  height: 205px;
+  overflow: hidden;
+}
+#Blog .blog-posts-img img {
+  max-height: inherit;
+}
+#Blog h3 a {
+  display: inline-block;
+  color: #FFF;
+  font-size: 70%;
+  width: 100%;
+  min-height: 105px;
+  padding: 35px 20px 20px 20px;
+  line-height: 1.5em;
+  background: #00BED7;
+}
+#Blog .date {
+  position: absolute;
+  top: 215px;
+  padding: 10px;
+  background: #FFF;
+  font-size: 80%;
+}
+#Blog nav {
+  clear: both;
+  padding: 0 30px;
+}
+#Blog  nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #FFF;
+  background: #808285;
+}
+
+/* Blog single */
+
+#Blog .blog-post {
+  max-width: 60%;
+  margin: 0 auto;
+}
+#Blog .blog-post h3 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 350%;
+}
+#Blog .blog-post p {
+  padding-bottom: 1.3em;
+  text-align: justify;
+}
+#Blog .blog-post img {
+  height: inherit;
+}
+#Blog .post-date {
+  width: 50%;
+  margin: 15px auto 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 80%;
+  color: #FFF;
+  background: #76CED9;
+}
+#Blog .post-date a {
+  color: #FFF;
+}
+
+
+
 /*
 Responsive Mode (320, 768, 1024, 1200)
 =======================================================
 */
 @media (min-width: 1400px) {
-  .content, .navbar div {
+  .content, .navbar div, #Blog {
     max-width: 1366px;
     margin: 0 auto;
   }
 }
-
+@media (max-width: 1112px) { /* iPad Pro */
+  #Blog .blog-posts {
+    width: 49%;
+    padding: 25px;
+  }
+  #Blog nav {
+    padding: 0 25px;
+  }
+  #Blog .blog-post {
+    max-width: 90%;
+  }
+}
 @media (max-width: 768px) {
   body {
     font-size: 1.7em;
@@ -338,8 +482,33 @@ Responsive Mode (320, 768, 1024, 1200)
     text-align: center;
     font-size: 0.9em;
   }
-}
 
+  /* Blog */
+  #Blog article {
+    padding: 30px;
+  }
+  #Blog .blog-posts {
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  #Blog .date {
+    top: 185px;
+    padding: 5px 20px;
+  }
+  #Blog nav {
+    padding: 0 0 20px 0;
+  }
+  #Blog .blog-post {
+    max-width: 95%;
+  }
+  #Blog .blog-post h3 {
+    font-size: 200%;
+  }
+  #Blog .post-date {
+    width: 100%;
+    padding: 5px 0;
+  }
+}
 @media (max-width: 320px) {
   body {
     font-size: 1.5em;

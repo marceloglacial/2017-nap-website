@@ -255,14 +255,16 @@ nav a:hover {
 /*  Blog
 -------------------------------------------------- */
 div.navbar-header.brand-center {
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  float: none;
+  width: 100%;
+  position: relative;
+  height: 70px;
 }
 div.navbar-header.brand-center .navbar-brand {
-  padding-right: 0;
-  margin-left:  0;
+  position: absolute;
+  margin: 0;
+  padding: 19px 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 #Blog * {
   margin: 0;
@@ -481,18 +483,6 @@ Responsive Mode (320, 768, 1024, 1200)
   }
 
   /* Blog */
-  div.navbar-header.brand-center {
-    width: 100%;
-    position: relative;
-    height: 70px;
-  }
-  div.navbar-header.brand-center .navbar-brand {
-    position: absolute;
-    margin: 0;
-    padding: 19px 0;
-    left: 45%;
-    transform: translate(-45%, 0);
-  }
   #Blog article {
     padding: 30px;
   }

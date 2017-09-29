@@ -333,7 +333,8 @@ div.navbar-header.brand-center .navbar-brand {
   padding: 0 30px;
 }
 #Blog  nav a {
-  display: inline-block;
+  float: left;
+  margin-right:60px;
   padding: 15px 20px;
   color: #FFF;
   background: #808285;

@@ -11,7 +11,7 @@ function catch_that_image() {
   $first_img = $matches [1] [0];
 
   if(empty($first_img)){ //Defines a default image
-    $first_img = "/images/default.jpg";
+    $first_img = "../wp-content/themes/nap-wordpress-theme/assets/img/blog_placeholder.png";
   }
   return $first_img;
 }

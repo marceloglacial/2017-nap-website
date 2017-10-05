@@ -7,7 +7,13 @@
   <meta name="robots" content="index, follow">
   <meta name="description" content="<?php bloginfo('name'); ?> -  <?php bloginfo('description'); ?>" />
   <meta name="keywords" content="psicologia, avaliação psicológica, fortaleza, Centro de Serviço COGMED, Atendimento Clínico, Testoteca"/>
+
+  <!-- Icons Tags -->
+  <meta property="og:title"              content="<?php bloginfo('name'); ?>" />
+  <meta property="og:description"        content="<?php bloginfo('description'); ?>" />
+  <meta property="og:image"              content="<?php bloginfo('template_url'); ?>/tile-wide.png" />
   <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png">
+
 
   <title><?php bloginfo('name'); ?> <?php if(!is_home()) { ?> - <?php the_title(); }; ?></title>
 

@@ -1,15 +1,15 @@
 # NAP - Núcleo de Avaliação PsicológicaVersão
 
-## Design
+### Design
 
 * Sketch App
 
-## Font-end 
+### Font-end 
 
 * HTML5
 * CSS3
 * JavaScript
 
-## Back-end
+### Back-end
 
 * WordPress Theme

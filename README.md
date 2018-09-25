@@ -1,3 +1,15 @@
-# NAP - Núcleo de Avaliação PsicológicaVersão: 1.0
+# NAP - Núcleo de Avaliação PsicológicaVersão
 
-Núcleo de Avaliação Psicológica – NAP (2007) wordpress theme’s. Powered by Wordpress and Bootstrap.
+#Design
+
+* Sketch App
+
+## Font-end 
+
+* HTML5
+* CSS3
+* JavaScript
+
+## Back-end
+
+* WordPress Theme

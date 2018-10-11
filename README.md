@@ -1,4 +1,4 @@
-# NAP - Núcleo de Avaliação Psicológica
+# NAP-Núcleo de Avaliação Psicológica
 
 ## Design
 
@@ -23,28 +23,28 @@ https://glacial.gitlab.io/2011-luciana-studart/
 
 ## Screnshots 
 
-![screenshot](design/screens/01 - Home.png)
+![screenshot](design/screens/01-Home.png)
 
 
 ---
 
 
-![screenshot](design/screens/02 - Quem Somos.png)
+![screenshot](design/screens/02-QuemSomos.png)
 
 
 ---
 
 
-![screenshot](design/screens/03 - Equipe.png)
+![screenshot](design/screens/03-Equipe.png)
 
 
 ---
 
 
-![screenshot](design/screens/04 - Serviços.png)
+![screenshot](design/screens/04-Serviços.png)
 
 
 ---
 
 
-![screenshot](design/screens/05 - Contato.png)
+![screenshot](design/screens/05-Contato.png)

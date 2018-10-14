@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-https://glacial.gitlab.io/2011-luciana-studart/
+https://glacial.gitlab.io/2017-nap-website/
 
 
 ## Screnshots 
@@ -41,7 +41,7 @@ https://glacial.gitlab.io/2011-luciana-studart/
 ---
 
 
-![screenshot](design/screens/04-Serviços.png)
+![screenshot](design/screens/04-Serviços.png)
 
 
 ---

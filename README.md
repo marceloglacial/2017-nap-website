@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-https://glacial.gitlab.io/2017-nap-website/
+https://marceloglacial.github.io/2017-nap-website/front-end/
 
 
 ## Screnshots 
